@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tumo Legal Associates | Company Culture</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fc;
+            color: #1a2c3e;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: #0a2c2f;
+            color: white;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 3px solid #c7a55b;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.02);
+        }
+
+        .logo-img {
+            width: 55px;
+            height: 55px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid #c7a55b;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-text h2 {
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+
+        .logo-text span {
+            color: #c7a55b;
+        }
+
+        .tagline {
+            font-size: 0.7rem;
+            opacity: 0.8;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 0;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #c7a55b;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #e8f0f0 0%, #ffffff 100%);
+            padding: 2.5rem;
+            border-radius: 1.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            border-left: 5px solid #c7a55b;
+        }
+
+        .hero h1 {
+            font-size: 2rem;
+            color: #0a2c2f;
+            margin-bottom: 1rem;
+        }
+
+        .culture-card {
+            background: white;
+            border-radius: 1.2rem;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border: 1px solid #e0e7e9;
+        }
+
+        .culture-card h3 {
+            font-size: 1.4rem;
+            color: #0a2c2f;
+            margin-bottom: 1rem;
+        }
+
+        .culture-card p {
+            color: #4a627a;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .value-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            border-top: 3px solid #c7a55b;
+        }
+
+        .value-item h4 {
+            font-size: 1.2rem;
+            color: #c7a55b;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 1.5rem 0 1rem;
+            padding-left: 1rem;
+            border-left: 5px solid #c7a55b;
+            color: #0a2c2f;
+        }
+
+        /* Policy Link Button */
+        .policy-link {
+            text-align: center;
+            margin: 2rem 0 1rem;
+        }
+
+        .policy-btn {
+            display: inline-block;
+            background: #0a2c2f;
+            color: white;
+            text-decoration: none;
+            padding: 0.8rem 2rem;
+            border-radius: 2rem;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: 1px solid #c7a55b;
+        }
+
+        .policy-btn:hover {
+            background: #c7a55b;
+            color: #0a2c2f;
+            transform: translateY(-2px);
+        }
+
+        .footer {
+            background: #0a2c2f;
+            color: #adccdf;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            border-top: 3px solid #c7a55b;
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .hero h1 {
+                font-size: 1.6rem;
+            }
+            .logo {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <img class="logo-img" src="logo.jpeg" alt="Tumo Legal Associates Logo" onerror="this.src='https://placehold.co/55x55/c7a55b/white?text=⚖️'">
+                <div class="logo-text">
+                    <h2>TUMO LEGAL <span>ASSOCIATES</span></h2>
+                    <div class="tagline">Excellence in Law & People</div>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="culture.html">Company Culture</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="benefits.html">Employee Benefits</a></li>
+                <li><a href="training.html">Training & Dev</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="hero">
+            <h1>Our Firm Culture</h1>
+            <p>Integrity, collaboration, and excellence — the foundation of Tumo Legal Associates.</p>
+        </div>
+
+        <div class="culture-card">
+            <h3>Collegial Excellence</h3>
+            <p>We believe that exceptional legal work flourishes in an environment of mutual respect and collaboration. From partner to associate, every voice is valued. Our open-door policy ensures mentorship and growth at every level.</p>
+        </div>
+
+        <div class="culture-card">
+            <h3>Pro Bono & Community Impact</h3>
+            <p>As officers of the court, we give back. Every attorney contributes 50+ pro bono hours annually. We partner with local legal aid societies to ensure justice is accessible to all.</p>
+        </div>
+
+        <h2 class="section-subtitle">Our Core Values</h2>
+        <div class="values-grid">
+            <div class="value-item">
+                <h4>Integrity</h4>
+                <p>Unwavering ethical standards in every case.</p>
+            </div>
+            <div class="value-item">
+                <h4>Excellence</h4>
+                <p>Meticulous preparation and strategic advocacy.</p>
+            </div>
+            <div class="value-item">
+                <h4>Collaboration</h4>
+                <p>Cross-practice teamwork for client success.</p>
+            </div>
+            <div class="value-item">
+                <h4>Heartfelt justice</h4>
+                <p>we belive that law is not just a profession,it's a calling to uplift and support the community with compassion</p>
+            </div>
+             <div class="value-item">
+                <h4>Respectful & Inclusive</h4>
+                <p>Every team member's voice matters. We celebrate diversity and foster belonging.</p>
+            </div>
+         </div>
+
+        <!-- Link to Policy Page -->
+        <div class="policy-link">
+            <a href="policy.html" class="policy-btn">View Firm Policies & Handbook</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Tumo Legal Associates — Excellence in Law & People. All rights reserved.</p>
+    </footer>
+</body>
+</html>

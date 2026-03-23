@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tumo Legal Associates | Careers</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fc;
+            color: #1a2c3e;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: #0a2c2f;
+            color: white;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 3px solid #c7a55b;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.02);
+        }
+
+        .logo-img {
+            width: 55px;
+            height: 55px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid #c7a55b;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-text h2 {
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+
+        .logo-text span {
+            color: #c7a55b;
+        }
+
+        .tagline {
+            font-size: 0.7rem;
+            opacity: 0.8;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 0;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #c7a55b;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #e8f0f0 0%, #ffffff 100%);
+            padding: 2.5rem;
+            border-radius: 1.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            border-left: 5px solid #c7a55b;
+        }
+
+        .hero h1 {
+            font-size: 2rem;
+            color: #0a2c2f;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin: 1.5rem 0 1rem;
+            padding-left: 1rem;
+            border-left: 5px solid #c7a55b;
+            color: #0a2c2f;
+        }
+
+        .job-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            margin: 1.5rem 0;
+        }
+
+        .job-card {
+            background: white;
+            border-radius: 1rem;
+            padding: 1.2rem 1.8rem;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.2s;
+            border: 1px solid #e0e7e9;
+        }
+
+        .job-card:hover {
+            transform: translateX(5px);
+            border-left: 3px solid #c7a55b;
+        }
+
+        .job-info h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+            color: #0a2c2f;
+        }
+
+        .job-info p {
+            color: #4a627a;
+            font-size: 0.9rem;
+        }
+
+        .job-tag {
+            background: #eef2f7;
+            padding: 0.3rem 1rem;
+            border-radius: 40px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            display: inline-block;
+        }
+
+        .apply-link {
+            display: inline-block;
+            background: #0a2c2f;
+            color: white;
+            text-decoration: none;
+            padding: 0.6rem 1.5rem;
+            border-radius: 2rem;
+            font-weight: 500;
+            transition: background 0.3s;
+            margin-left: 1rem;
+        }
+
+        .apply-link:hover {
+            background: #c7a55b;
+            color: #0a2c2f;
+        }
+
+        .info-note {
+            margin-top: 1rem;
+            font-style: italic;
+            text-align: center;
+            color: #5f7f9c;
+            padding: 1rem;
+            background: #eef3f5;
+            border-radius: 2rem;
+        }
+
+        .footer {
+            background: #0a2c2f;
+            color: #adccdf;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            border-top: 3px solid #c7a55b;
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .job-card {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+            .apply-link {
+                margin-left: 0;
+            }
+            .logo {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <img class="logo-img" src="logo.jpeg" alt="Tumo Legal Associates Logo" onerror="this.src='https://placehold.co/55x55/c7a55b/white?text=⚖️'">
+                <div class="logo-text">
+                    <h2>TUMO LEGAL <span>ASSOCIATES</span></h2>
+                    <div class="tagline">Excellence in Law & People</div>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="culture.html">Company Culture</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="benefits.html">Employee Benefits</a></li>
+                <li><a href="training.html">Training & Dev</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="hero">
+            <h1>Join Tumo Legal Associates</h1>
+            <p>Build your legal career with a firm that values excellence, integrity, and professional growth.</p>
+        </div>
+
+        <h2 class="section-title">Current Openings</h2>
+        <div class="job-list">
+            <div class="job-card">
+                <div class="job-info">
+                    <h3>Junior Associates Attorney</h3>
+                    <p> Maseru · Full-time</p>
+                </div>
+                <div>
+                    <span class="job-tag"> Immediate opening</span>
+                    <a href="https://rosemarietumo@gmail.com" class="apply-link">Apply Now →</a>
+                </div>
+            </div>
+            <div class="job-card">
+                <div class="job-info">
+                    <h3>Corporate Counsel - M&A</h3>
+                    <p> Maseru · Hybrid</p>
+                </div>
+                <div>
+                    <span class="job-tag"> Immediate opening</span>
+                    <a href="https://rosemarietumo@gmail.com" class="apply-link">Apply Now →</a>
+                </div>
+            </div>
+            <div class="job-card">
+                <div class="job-info">
+                    <h3>Paralegal</h3>
+                    <p> Maseru · On-site</p>
+                </div>
+                <div>
+                    <span class="job-tag"> Immediate opening</span>
+                    <a href="https://rosemarietumo@gmail.com" class="apply-link">Apply Now →</a>
+                </div>
+            </div>
+            <div class="job-card">
+                <div class="job-info">
+                    <h3>Legal Operations Manager</h3>
+                    <p> Remote (LS) · Full-time</p>
+                </div>
+                <div>
+                    <span class="job-tag"> Immediate opening</span>
+                    <a href="https://rosemarietumo@gmail.com" class="apply-link">Apply Now →</a>
+                </div>
+            </div>
+            <div class="job-card">
+                <div class="job-info">
+                    <h3>IT Specialist</h3>
+                    <p> Multiple Offices · Internship</p>
+                </div>
+                <div>
+                    <span class="job-tag"> Apply by May 15</span>
+                    <a href="https://rosemarietumo@gmail.com" class="apply-link">Apply Now →</a>
+                </div>
+            </div>
+            <div class="job-card">
+                <div class="job-info">
+                    <h3>Intellectual Property Attorney</h3>
+                    <p> Maseru · Hybrid</p>
+                </div>
+                <div>
+                    <span class="job-tag"> Immediate opening</span>
+                    <a href="https://rosemarietumo@gmail.com" class="apply-link">Apply Now →</a>
+                </div>
+            </div>
+        </div>
+        <p class="info-note"> Send your resume and cover letter to careers@tumolegal.com | EOE committed to diversity.</p>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Tumo Legal Associates — Excellence in Law & People. All rights reserved.</p>
+    </footer>
+</body>
+</html>

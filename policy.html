@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tumo Legal Associates | Firm Policies</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fc;
+            color: #1a2c3e;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: #0a2c2f;
+            color: white;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 3px solid #c7a55b;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.02);
+        }
+
+        .logo-img {
+            width: 55px;
+            height: 55px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid #c7a55b;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-text h2 {
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+
+        .logo-text span {
+            color: #c7a55b;
+        }
+
+        .tagline {
+            font-size: 0.7rem;
+            opacity: 0.8;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 0;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #c7a55b;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #e8f0f0 0%, #ffffff 100%);
+            padding: 2.5rem;
+            border-radius: 1.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            border-left: 5px solid #c7a55b;
+        }
+
+        .hero h1 {
+            font-size: 2rem;
+            color: #0a2c2f;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            color: #4a627a;
+        }
+
+        .policy-section {
+            background: white;
+            border-radius: 1.2rem;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border: 1px solid #e0e7e9;
+        }
+
+        .policy-section h2 {
+            font-size: 1.5rem;
+            color: #c7a55b;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e0e7e9;
+        }
+
+        .policy-section h3 {
+            font-size: 1.2rem;
+            color: #0a2c2f;
+            margin: 1rem 0 0.5rem;
+        }
+
+        .policy-section p {
+            color: #4a627a;
+            margin-bottom: 0.8rem;
+        }
+
+        .policy-section ul {
+            margin: 0.8rem 0 0.8rem 1.5rem;
+            color: #4a627a;
+        }
+
+        .policy-section li {
+            margin-bottom: 0.5rem;
+        }
+
+        .back-link {
+            text-align: center;
+            margin: 2rem 0 1rem;
+        }
+
+        .back-btn {
+            display: inline-block;
+            background: #0a2c2f;
+            color: white;
+            text-decoration: none;
+            padding: 0.8rem 2rem;
+            border-radius: 2rem;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: 1px solid #c7a55b;
+        }
+
+        .back-btn:hover {
+            background: #c7a55b;
+            color: #0a2c2f;
+            transform: translateY(-2px);
+        }
+
+        .footer {
+            background: #0a2c2f;
+            color: #adccdf;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            border-top: 3px solid #c7a55b;
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .hero h1 {
+                font-size: 1.6rem;
+            }
+            .logo {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <img class="logo-img" src="logo.jpeg" alt="Tumo Legal Associates Logo" onerror="this.src='https://placehold.co/55x55/c7a55b/white?text=⚖️'">
+                <div class="logo-text">
+                    <h2>TUMO LEGAL <span>ASSOCIATES</span></h2>
+                    <div class="tagline">Excellence in Law & People</div>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="culture.html">Company Culture</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="benefits.html">Employee Benefits</a></li>
+                <li><a href="training.html">Training & Dev</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="hero">
+            <h1>Firm Policies & Employee Handbook</h1>
+            <p>Our commitment to transparency, fairness, and professional excellence.</p>
+        </div>
+
+        <div class="policy-section">
+            <h2>1. Code of Conduct</h2>
+            <p>All attorneys and staff are expected to uphold the highest standards of professional ethics and integrity.</p>
+            <ul>
+                <li>Treat all colleagues, clients, and court personnel with respect and professionalism</li>
+                <li>Maintain client confidentiality in accordance with legal ethics rules</li>
+                <li>Avoid conflicts of interest and disclose any potential conflicts promptly</li>
+                <li>Uphold the firm's commitment to diversity, equity, and inclusion</li>
+            </ul>
+        </div>
+
+        <div class="policy-section">
+            <h2>2. Attendance & Leave Policy</h2>
+            <h3>Working Hours</h3>
+            <p>Standard office hours are Monday through Friday, 9:00 AM to 6:00 PM. Flexible arrangements may be approved by management.</p>
+            <h3>Paid Time Off (PTO)</h3>
+            <ul>
+                <li>Attorneys: 20 days per year</li>
+                <li>Staff: 15 days per year</li>
+                <li>Unused days carry over up to 10 days annually</li>
+            </ul>
+            <h3>Parental Leave</h3>
+            <p>12 weeks fully paid leave for primary caregivers; 4 weeks for secondary caregivers.</p>
+        </div>
+
+        <div class="policy-section">
+            <h2>3. Remote Work & Hybrid Policy</h2>
+            <p>Tumo Legal Associates supports flexible work arrangements. Attorneys may work remotely up to 2 days per week with partner approval. Staff positions have hybrid schedules as determined by department heads. All remote work must comply with data security and client confidentiality requirements.</p>
+        </div>
+
+        <div class="policy-section">
+            <h2>4. Performance Evaluation & Promotion</h2>
+            <p>Annual performance reviews are conducted in December. Promotions are based on:</p>
+            <ul>
+                <li>Billable hours and client satisfaction</li>
+                <li>Professional development and CLE completion</li>
+                <li>Mentorship and firm citizenship</li>
+                <li>Pro bono contributions</li>
+            </ul>
+        </div>
+
+        <div class="policy-section">
+            <h2>5. Anti-Harassment & Non-Discrimination</h2>
+            <p>Tumo Legal Associates is committed to providing a workplace free from harassment and discrimination. We prohibit discrimination based on race, color, religion, sex, national origin, age, disability, sexual orientation, gender identity, or any other protected characteristic. All complaints are investigated promptly and confidentially.</p>
+        </div>
+
+        <div class="policy-section">
+            <h2>6. Technology & Data Security</h2>
+            <ul>
+                <li>Use firm-approved devices and software for all client work</li>
+                <li>Enable two-factor authentication on all accounts</li>
+                <li>Report any suspected security breaches immediately to IT</li>
+                <li>Client data must be stored on encrypted firm servers only</li>
+            </ul>
+        </div>
+
+        <div class="policy-section">
+            <h2>7. Continuing Legal Education (CLE)</h2>
+            <p>All attorneys must complete the required CLE credits annually. The firm covers:</p>
+            <ul>
+                <li>Registration fees for accredited programs</li>
+                <li>Up to $2,000 per year for external courses and certifications</li>
+                <li>In-house CLE sessions are offered monthly</li>
+            </ul>
+        </div>
+
+        <div class="policy-section">
+            <h2>8. Grievance & Reporting Procedure</h2>
+            <p>Employees with concerns should first speak with their direct supervisor. If unresolved, contact HR at hr@tumolegal.com. All reports are treated with confidentiality and no retaliation will be tolerated.</p>
+        </div>
+
+        <div class="back-link">
+            <a href="culture.html" class="back-btn">← Back to Firm Culture</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Tumo Legal Associates — Excellence in Law & People. All rights reserved.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.7rem;">Last updated: March 2025</p>
+    </footer>
+</body>
+</html>
